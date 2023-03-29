@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se2203b.assignment1.SortingHubController">
+   <children>
+      <Button fx:id="resetBtn" layoutX="714.0" layoutY="359.0" mnemonicParsing="false" onAction="#reset" prefHeight="25.0" prefWidth="65.0" text="Reset" />
+      <Button fx:id="sortBtn" layoutX="639.0" layoutY="358.0" mnemonicParsing="false" onAction="#startSort" prefHeight="26.0" prefWidth="65.0" text="Sort" />
+      <Slider fx:id="sliderChange" layoutX="320.0" layoutY="365.0" max="128.0" min="32.0" onDragDetected="#createArray" onMouseClicked="#createArray" onMouseDragged="#createArray" prefHeight="14.0" prefWidth="276.0" value="64.0" />
+      <Label layoutX="258.0" layoutY="363.0" text="Array Size" />
+      <Label layoutX="20.0" layoutY="363.0" text="Algorithm" />
+      <Pane fx:id="display" layoutX="20.0" layoutY="14.0" prefHeight="328.0" prefWidth="760.0" style="-fx-border-color: black; -fx-background-color: #D3D3D3;" />
+      <Label fx:id="arrSize" layoutX="604.0" layoutY="362.0" prefHeight="18.0" prefWidth="22.0" textAlignment="CENTER" />
+      <ComboBox fx:id="cBox" layoutX="82.0" layoutY="360.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>
